@@ -1,7 +1,14 @@
 {
+  "version": "0.0.1",
   "name": "root",
   "private": true,
+  "workspaces": ["packages/*"],
+  "repository": "git@github.com:etm12/etm12.git",
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "jest": "^23.6.0",
     "lerna": "^3.4.3"
   }
 }
