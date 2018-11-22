@@ -1,3 +1,6 @@
+[![Build Status (master)](https://travis-ci.org/etm12/etm12.svg?branch=master)](https://travis-ci.org/etm12/etm12)
+[![Build Status (develop)](https://travis-ci.org/etm12/etm12.svg?branch=develop)](https://travis-ci.org/etm12/etm12)
+
 # etm12 monorepo
 
 Collection of modules and libraries for use with Node.js applications.
