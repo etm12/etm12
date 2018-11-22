@@ -23,14 +23,16 @@ env:
 
 #
 
-cache: npm
+cache:
+  yarn: true
 
 matrix:
   fast_finish: true
 
 # Install
 
-install: npm ci
+install:
+  - yarn
 
 # Script
 
