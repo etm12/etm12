@@ -3,6 +3,7 @@
   "name": "root",
   "private": true,
   "workspaces": ["packages/*"],
+  "repository": "git@github.com:etm12/etm12.git",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
