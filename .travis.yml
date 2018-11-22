@@ -1,0 +1,43 @@
+if: tag IS blank
+
+language: node_js
+
+notifications:
+  email: false
+
+# Environment
+
+node_js:
+  - '8'
+
+os:
+  - linux
+
+env:
+  global:
+    - NODE_NO_WARNINGS=1
+
+  matrix:
+    - PACKAGE=toolkit
+    - PACKAGE=termutil
+
+#
+
+cache: npm
+
+matrix:
+  fast_finish: true
+
+# Install
+
+install: npm ci
+
+# Script
+
+before_script:
+  - npm config set loglevel warn
+  - git config --global user.email "test@emailadress.somedomain"
+  - git config --global user.name "CI Test User"
+
+script:
+  - lerna run test --scope $PACKAGE
