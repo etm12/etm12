@@ -1,7 +1,12 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": ["packages/*"],
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "jest": "^23.6.0",
     "lerna": "^3.4.3"
   }
 }
