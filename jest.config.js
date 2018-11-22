@@ -1,10 +1,12 @@
 module.exports = {
   // collectCoverage: true,
   collectCoverageFrom: [
-    'packages/**/*.{js}',
+    'packages/{toolkit,termutil}/**/*.js',
     '!**/node_modules/**',
   ],
   roots: [
-    'packages/',
+    '<rootDir>/packages/',
   ],
+  testEnvironment: 'node',
+  verbose: true,
 };
