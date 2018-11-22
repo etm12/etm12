@@ -1,3 +1,3 @@
 describe('termutil/index', () => {
-  it('no crash');
+  it('no crash', () => {});
 });
