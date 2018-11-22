@@ -17,17 +17,17 @@ env:
   global:
     - NODE_NO_WARNINGS=1
 
-  matrix:
-    - PACKAGE=toolkit
-    - PACKAGE=termutil
+  # matrix:
+  #   - PACKAGE=toolkit
+  #   - PACKAGE=termutil
 
 #
 
 cache:
   yarn: true
 
-matrix:
-  fast_finish: true
+# matrix:
+#   fast_finish: true
 
 # Install
 
@@ -41,5 +41,5 @@ before_script:
   - git config --global user.email "test@emailadress.somedomain"
   - git config --global user.name "CI Test User"
 
-script:
-  - lerna run test --scope "\@etm12/${PACKAGE}"
+script: yarn test
+#  - lerna run test --scope "\@etm12/${PACKAGE}"
