@@ -1,5 +1,8 @@
 module.exports = {
   sourceType: "module",
+  ignore: [
+    /.*__tests__.*/i
+  ],
   babelrcRoots: [
     '.',
     'packages/*',
