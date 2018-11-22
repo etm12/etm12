@@ -4,11 +4,13 @@
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel lib/ -o dist/ --source-maps"
+    "build": "babel --root-mode upward lib/ -o dist/ --source-maps",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6"
+    "@babel/preset-env": "^7.1.6",
+    "jest": "^23.6.0"
   }
 }
