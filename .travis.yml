@@ -42,4 +42,4 @@ before_script:
   - git config --global user.name "CI Test User"
 
 script:
-  - lerna run test --scope $PACKAGE
+  - lerna run test --scope "\@etm12/${PACKAGE}"

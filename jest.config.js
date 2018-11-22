@@ -1,5 +1,5 @@
 module.exports = {
-  collectCoverage: true,
+  // collectCoverage: true,
   collectCoverageFrom: [
     'packages/**/*.{js}',
     '!**/node_modules/**',

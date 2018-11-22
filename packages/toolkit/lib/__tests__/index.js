@@ -1,3 +1,3 @@
 describe('toolkit/index', () => {
-  it('no crash');
+  it('no crash', () => {});
 });
