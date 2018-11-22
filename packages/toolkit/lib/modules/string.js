@@ -1,2 +1,3 @@
 // @ts-check
-export const stringOf = () => '';
+import {} from './array';
+export const stringOf_ = (n, c) => ''.padEnd(n, c);
